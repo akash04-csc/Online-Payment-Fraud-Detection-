@@ -15,22 +15,19 @@ model=load_model()
 
 # Title of the app
 st.title("Online Payment Fraud Detection")
-
-# Example: Assuming the model takes 4 features (like Iris dataset)
 st.subheader("Enter feature values:")
 
-# Input fields (you can modify names & number based on your model)
+
 f1 = st.number_input("Transaction Amount", value=0.0)
 f2 = st.number_input("Time of Transaction", value=0.0)
 f3 = float(st.selectbox("Previous Fradaulent Transactions", options=[0,1,2,3,4]))
 f4 = st.slider("Account Age",0,140)
 f5 = st.number_input("No. of Transactions Last 24h", value=0.0)
-
 f6=st.selectbox("Transaction Type",options=['Bill Payment','ATM Withdrawal','Bank Transfer','Online Purchase','POS Payment'])
 f7=st.selectbox("Location",options=['Chicago','New York','San Francisco','Seattle','Los Angeles','Miami','Houston','Boston'])
 f8=st.selectbox("Device Used",options=['Mobile','Tablet','Desktop','Unknown Device'])
 f9=st.selectbox("Payment Method",options=['UPI','Debit Card','Net Banking','Credit Card','Invalid Method'])
-##input_data = [[f1, f2, f3, f4, f5, f6, f7, f8, f9]]
+
 input_df = pd.DataFrame([{
     "Transaction_Amount": f1,
     "Time_of_Transaction": f2,
