@@ -1,8 +1,8 @@
-## 📊 Fraud Detection: Exploratory Data Analysis & Machine Learning
+##  Fraud Detection: Exploratory Data Analysis & Machine Learning
 
 This project involves data exploration and machine learning modeling for fraud detection using a tabular dataset. The objective is to analyze the data, identify patterns and relationships, and build a model to predict fraudulent transactions.
 
-### 📁 Files
+### Files
 
 * `code.ipynb` — Jupyter Notebook containing the entire workflow:
 
@@ -14,8 +14,8 @@ This project involves data exploration and machine learning modeling for fraud d
 * `Fraud Detection Dataset.csv` — The dataset used for analysis (expected to be in the same directory).
 
 ---
-
-### 🔍 Features
+NOTE:The pickle file storing the model is too large to be push to the repository
+###  Features
 
 * **EDA** using pandas, matplotlib, seaborn to understand data distributions, correlations, and class imbalance.
 * **Data preprocessing** including handling categorical variables and missing values.
@@ -24,30 +24,13 @@ This project involves data exploration and machine learning modeling for fraud d
   * Random Forest
   * Logistic Regression
   * Support Vector Machine (SVM)
+  * KNN
 * **Model evaluation** using accuracy, F1-score, and confusion matrices.
 * **SMOTE** used for balancing imbalanced datasets.
 
 ---
 
-### 🛠️ Dependencies
-
-Make sure you have the following Python packages installed:
-
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn imbalanced-learn
-```
-
----
-
-### 🚀 How to Run
-
-1. Clone this repository or download the files.
-2. Place `Fraud Detection Dataset.csv` in the same folder as the notebook.
-3. Open and run `code.ipynb` in Jupyter Notebook or JupyterLab.
-
----
-
-### 📈 Results
+###  Results
 
 The notebook evaluates the performance of multiple models and compares them based on metrics like accuracy and F1-score. Class imbalance is addressed using SMOTE to improve prediction performance on minority classes.
 
