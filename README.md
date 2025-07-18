@@ -12,9 +12,10 @@ This project involves data exploration and machine learning modeling for fraud d
   * Model training and evaluation
 
 * `Fraud Detection Dataset.csv` — The dataset used for analysis (expected to be in the same directory).
-
+* 
+NOTE:The pickle file storing the model is too large to be pushed to the repository
 ---
-NOTE:The pickle file storing the model is too large to be push to the repository
+
 ###  Features
 
 * **EDA** using pandas, matplotlib, seaborn to understand data distributions, correlations, and class imbalance.
